@@ -1,14 +1,46 @@
-**Programa con Interfaz Gráfica que simula una Máquina tragamonedas.**
-Este programa consta de tres paquetes para implementar el patron de diseño modelo, vista y controlador (MVC) para una mejor estructuración del código.
-Los cuales se pueden observar en el proyecto de la siguiente manera: MaquinaTragaMonedas.app.mvc.Controller, MaquinaTragaMonedas.app.mvc.Model y MaquinaTragaMonedas.app.mvc.View
-Referente al primer paquete, contiene la clase controlador que se encargara de ser el intermediario entre las acciones de la vista y el modelo de datos.
-El segundo paquete que contiene el modelo, el modelo de datos son todos los atributos que se consideraron del análisis de los elementos que conforman a una maquina tragamonedas. Los cuales son los siguientes: 
-    numeroCarretes
-    handle (palanca)
-    valorApuesta
-    gananciasApuesta
-    simbolos:🍎, 🍊, 🍉, 💎
-Por último, el paquete donde se encuentra alojada la vista, contiene un JFrame con Jlabels, botones y cuadros de texto que permiten interactuar con el juego. 
-Para poder iniciar un juego, primero se debe ingresar monedas para poder activar la máquina, después se debe ingresar una cantidad de apuesta y dar click en el botón "Go!" con eso se activa el juego donde se 
-visualiza como el programa ejecuta los carretes de la máquina y al final si hay una triada correcta se muestra un mensaje y se suma la ganancia obtenida a las monedas que previamente ingreso al inicio del juego. 
-Más detalles se encuentran en el propio proyecto.
+# Simulador de Máquina Tragamonedas con Interfaz Gráfica
+
+Este programa es una simulación de una **máquina tragamonedas** que utiliza una **Interfaz Gráfica de Usuario (GUI)**. El diseño sigue el patrón de diseño **Modelo-Vista-Controlador (MVC)** para garantizar una mejor estructuración del código.
+
+## Estructura del Proyecto
+
+El proyecto está dividido en tres paquetes principales que implementan el patrón MVC. Estos paquetes son:
+
+1. **Controller**: `MaquinaTragaMonedas.app.mvc.Controller`
+2. **Model**: `MaquinaTragaMonedas.app.mvc.Model`
+3. **View**: `MaquinaTragaMonedas.app.mvc.View`
+
+### Paquete Controller
+El paquete `Controller` contiene la clase que actúa como intermediario entre las acciones del usuario en la vista y los datos en el modelo. Se encarga de gestionar la lógica de interacción y actualizar la vista con los resultados.
+
+### Paquete Model
+El paquete `Model` contiene la representación de los datos de la máquina tragamonedas. Los principales atributos del modelo son:
+
+- **numeroCarretes**: El número de carretes de la máquina tragamonedas.
+- **handle (palanca)**: El mecanismo que el jugador acciona para hacer girar los carretes.
+- **valorApuesta**: La cantidad de monedas que el jugador apuesta en cada giro.
+- **gananciasApuesta**: El monto ganado por el jugador en cada giro, dependiendo de los resultados de los carretes.
+- **simbolos**: Los símbolos que aparecen en los carretes, representados por los siguientes caracteres:  
+  🍎 (manzana), 🍊 (naranja), 🍉 (sandía), 💎 (diamante).
+
+### Paquete View
+El paquete `View` contiene la interfaz gráfica, que está basada en un **JFrame** con varios **JLabels**, **botones** y **cuadros de texto** para interactuar con el jugador. La vista permite lo siguiente:
+
+1. **Ingresar monedas**: El jugador debe introducir monedas para activar la máquina tragamonedas.
+2. **Establecer la apuesta**: El jugador debe seleccionar la cantidad de monedas que desea apostar.
+3. **Iniciar el juego**: Al hacer clic en el botón **"Go!"**, los carretes se activan y giran, mostrando los símbolos aleatorios.
+4. **Resultados**: Si los carretes muestran una triada de símbolos iguales, se muestra un mensaje indicando la victoria y se suman las ganancias obtenidas a las monedas ingresadas al inicio del juego.
+
+## Cómo Jugar
+
+1. Inicia el programa.
+2. Introduce monedas para activar la máquina.
+3. Ingresa el valor de la apuesta.
+4. Haz clic en el botón **"Go!"** para empezar el giro de los carretes.
+5. Si hay una combinación ganadora, recibirás un mensaje con el monto ganado.
+
+Más detalles sobre la implementación se pueden encontrar directamente en el proyecto.
+
+---
+
+¡Espero que disfrutes jugando y explorando el código!
